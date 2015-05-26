@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/sop" xmlns:tns="http://www.example.com/sop">
+<element name="CompleteSchema">
+   <complexType>
+    <sequence>   
+     <element name="Part">
+        <complexType>
+            <sequence>
+                <element name="p_tupleid" type="string"/>
+                <element name="p_partkey" type="integer"/>
+                <element name="p_name">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_mfgr">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_brand">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_type">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_size">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="integer" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_container">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_retailprice">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="decimal" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="p_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="p_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Supplier">
+        <complexType>
+            <sequence>
+                <element name="s_tupleid" type="string"/>
+                <element name="s_suppkey" type="integer"/>
+                <element name="s_name">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="s_address">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="s_nationkey">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="integer" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="s_phone">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+               <element name="s_acctbal">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="decimal" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="s_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="s_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="s_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="PartSupp">
+        <complexType>
+            <sequence>
+                <element name="ps_tupleid" type="string"/>
+                <element name="ps_partkey" type="integer"/>
+                <element name="ps_suppkey" type="integer"/>
+                <element name="ps_availqty">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="integer" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="ps_supplycost">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="decimal" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="ps_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="ps_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="ps_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Customer">
+        <complexType>
+            <sequence>
+                <element name="c_tupleid" type="string"/>
+                <element name="c_custkey" type="integer" maxOccurs="1" minOccurs="1"/>
+                <element name="c_name">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="c_address">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="c_nationkey">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="integer" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="c_phone">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+               <element name="c_acctbal">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="decimal" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="c_mktsegment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element> 
+                <element name="c_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="c_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="c_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Nation">
+        <complexType>
+            <sequence>
+                <element name="n_tupleid" type="string"/>
+                <element name="n_nationkey" type="integer"/>
+                <element name="n_name">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="n_regionkey">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="integer" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="n_comment">
+                    <complexType>
+                       		<attribute name="value" type="string"></attribute>
+                            <attribute name="from" type="dateTime" ></attribute>
+                            <attribute name="to" type="dateTime" ></attribute>
+                    </complexType>
+                </element>
+                <element name="n_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="n_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="LineItem">
+        <complexType>
+            <sequence>
+                <element name="l_tupleid" type="string"/>
+                <element name="l_orderkey" type="integer"/>
+                <element name="l_partkey" type="integer"/>
+                <element name="l_suppkey" type="integer"/>
+                <element name="l_linenumber" type="integer"/>
+                <element name="l_quantity" type="integer"/>
+                <element name="l_extendedprice" type="integer"/>
+                <element name="l_discount" type="integer"/>
+                <element name="l_tax" type="integer"/>
+                <element name="l_returnflag">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="l_linestatus">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="l_shipdate">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="l_commitdate">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+               <element name="l_receiptdate">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="l_shipinstruct" type="string"/>
+                <element name="l_shipmode" type="string"/> 
+                <element name="l_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="l_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="l_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Region">
+        <complexType>
+            <sequence>
+                <element name="r_tupleid" type="string"/>
+                <element name="r_regionkey" type="integer"/>
+                <element name="r_name">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="r_comment">
+                    <complexType>
+                        <attribute name="value" type="string"></attribute>
+                        <attribute name="from" type="dateTime" ></attribute>
+                        <attribute name="to" type="dateTime" ></attribute>
+                    </complexType>
+                </element>
+                <element name="r_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="r_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="Orders">
+        <complexType>
+            <sequence>
+                <element name="o_tupleid" type="string"/>
+                <element name="o_orderkey" type="integer"/>
+                <element name="o_custkey" type="integer"/>
+                <element name="o_orderstatus">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="o_totalprice" type="decimal"/>
+                <element name="o_orderdate" type="dateTime"/>
+                <element name="o_orderpriority" type="string"/>
+                <element name="o_clerk" type="string"/>
+                <element name="o_shippriority" type="integer"/>
+                <element name="o_comment">
+                    <complexType>
+                        <sequence>
+                            <element name="value" type="string" maxOccurs="unbounded"/>
+                            <element name="from" type="dateTime" maxOccurs="unbounded"/>
+                            <element name="to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="o_from" type="dateTime" maxOccurs="unbounded"/>
+                <element name="o_to" type="dateTime" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="provenance">
+        <complexType>
+            <sequence>
+                <element name="pr_tupleID" type="string"/>
+                <element name="pr_result" type="string" />
+            </sequence>
+        </complexType>
+    </element>
+    <element name="change">
+        <complexType>
+            <sequence>
+                <element name="ch_queryID" type="string"/>
+                <element name="ch_name" type="string"/>
+                <element name="ch_username" type="string"/>
+                <element name="ch_time" type="dateTime"/>
+            </sequence>
+        </complexType>
+    </element>
+    </sequence>
+    </complexType>
+   </element>
+    
+ 
+</schema>
